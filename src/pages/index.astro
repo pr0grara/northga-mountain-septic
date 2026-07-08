@@ -1,0 +1,259 @@
+---
+import { Image } from 'astro:assets';
+import BaseLayout from '@layouts/BaseLayout.astro';
+import ServiceAreaMap from '@components/ServiceAreaMap.astro';
+import FaqSection from '@components/FaqSection.astro';
+import FinalCta from '@components/FinalCta.astro';
+import QuoteForm from '@components/QuoteForm.astro';
+import CityLinks from '@components/CityLinks.astro';
+import { SITE, tel } from '@config/site';
+import { SERVICES, type Faq } from '@config/services';
+import { serviceUrl } from '../lib/urls';
+import { defaultHero } from '../lib/images';
+import { faqPage } from '../lib/schema';
+
+const title = `${SITE.region} Septic Pumping, Repair & Inspections`;
+const description = `Septic service across ${SITE.region}: tank pumping, cleaning, repairs, inspections, drain fields, and emergencies. Honest, local crew that knows mountain systems. Call ${SITE.phoneDisplay} for a fast quote.`;
+
+// Homepage FAQs (rendered + FAQ schema via FaqSection / faqPage).
+const homeFaqs: Faq[] = [
+  {
+    q: 'How often should I have my septic tank pumped?',
+    a: 'For most households, every three to five years, depending on tank size and how many people live in the home. Smaller tanks, larger families, and vacation rentals need it more often. If you cannot remember the last time it was pumped, it is overdue — call and we will get you on a schedule.',
+  },
+  {
+    q: 'What septic work do you do?',
+    a: 'Tank pumping and cleaning, system repairs (baffles, lids, lines, pumps, and floats), drain field diagnosis and repair, and inspections for home sales. We also handle emergency backups. One local crew covers the whole system across Western North Carolina.',
+  },
+  {
+    q: 'How do I get a quote?',
+    a: 'Call us with roughly where your tank is and what is going on — a routine pump, a backup, a soggy yard, an alarm, or an inspection for a home sale. That is usually enough for a straight price over the phone. You can also send details through the quote form.',
+  },
+  {
+    q: 'Can you come the same day?',
+    a: 'Same-day service is often possible, especially for urgent problems like a backup or an overflow. Ask when you call and we will give you a real time — not a runaround.',
+  },
+  {
+    q: 'My tank is on a steep lot with no records — can you still service it?',
+    a: 'Almost always. Mountain access and unmarked tanks are most of what we do out here. We locate and dig to buried lids, and bring extra hose so the truck can stay where it fits and still reach a tank up a bank or down a slope.',
+  },
+  {
+    q: 'What areas do you cover?',
+    a: 'Asheville, Hendersonville, Waynesville, Black Mountain, Weaverville, Fletcher, Arden, Brevard, Marion, Burnsville, Sylva, and the surrounding mountain communities. If you are not sure we reach you, call and ask — we likely do.',
+  },
+];
+
+const jsonLd = faqPage(homeFaqs) ?? [];
+---
+
+<BaseLayout title={title} description={description} jsonLd={jsonLd}>
+  <!-- 1. Simple bold headline — no background image, no subtext -->
+  <section class="lp-hero">
+    <div class="container">
+      <h1>Septic Pumping & Repair in {SITE.region}</h1>
+    </div>
+  </section>
+
+  <!-- 2. Photo + quote form -->
+  <section class="section-sm">
+    <div class="container split">
+      <div class="lp-photo">
+        <Image
+          src={defaultHero}
+          alt={`Septic pumping and repair in ${SITE.region}`}
+          widths={[480, 760, 1000]}
+          sizes="(max-width: 920px) 100vw, 560px"
+          fetchpriority="high"
+          loading="eager"
+        />
+      </div>
+      <QuoteForm source="home-hero" />
+    </div>
+  </section>
+
+  <!-- 3. Intro / About -->
+  <section class="section section-soft" id="about">
+    <div class="container prose">
+      <h2>Your Local Septic Crew — Pumping, Repairs &amp; Inspections.</h2>
+      <p>
+        We’re a full-service septic company serving {SITE.region} and the surrounding mountain
+        communities. Routine tank pumping, a backup that needs fixing today, a soggy spot over the
+        drain field, a pump alarm, or an inspection before you buy or sell — we handle the whole
+        system, and we come to your property to do it.
+      </p>
+      <p>
+        Out here most homes run on a septic tank and drain field, not city sewer, and mountain
+        systems have their own challenges: steep lots, buried tanks with no records, rocky soil, and
+        heavy rain that saturates fields. Tell us where your tank is and what it’s doing, and we’ll
+        give you a straight answer, a real price, and a crew that won’t tear up your yard.
+      </p>
+      <ul class="checklist">
+        <li>Septic tank pumping &amp; cleaning</li>
+        <li>System repairs — baffles, lids, lines, pumps &amp; floats</li>
+        <li>Drain field diagnosis &amp; repair</li>
+        <li>Inspections for home buyers &amp; sellers</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 3. What We Do — a section per service (alternating rows) -->
+  <section class="section section-soft" id="services">
+    <div class="container">
+      <div class="section-head">
+        <h2>What We Do</h2>
+        <p class="lead muted">
+          From a routine pump to a failing drain field, here’s what we handle for
+          {SITE.region} homeowners.
+        </p>
+      </div>
+
+      {SERVICES.map((s, i) => (
+        <div class:list={['srow', { reverse: i % 2 === 1 }]}>
+          <div class="srow-media">
+            <a href={serviceUrl(s)}>
+              <Image
+                src={s.image}
+                alt={s.imageAlt}
+                widths={[480, 720, 960]}
+                sizes="(max-width: 920px) 100vw, 500px"
+                loading="lazy"
+                style="border-radius:var(--radius);width:100%;"
+              />
+            </a>
+          </div>
+          <div class="srow-body">
+            {s.emergency && <span class="badge">Emergency</span>}
+            <h3><a href={serviceUrl(s)}>{s.name}</a></h3>
+            <p>{s.description}</p>
+            <p class="srow-actions">
+              <a class="btn btn-primary" href={serviceUrl(s)}>More on {s.short} →</a>
+              <a class="btn btn-call" href={tel()}>Call {SITE.phoneDisplay}</a>
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- 4. Service Across Western NC (maps + coverage) -->
+  <ServiceAreaMap />
+
+  <!-- 5. Backing up or a soggy yard? — urgency -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Sewage Backing Up or a Soggy Yard? Don’t Wait.</h2>
+        <p class="lead muted">
+          A septic problem only gets worse — and more expensive — the longer it runs. A few signs
+          mean you should cut back on water and call today.
+        </p>
+      </div>
+      <div class="issue-grid">
+        <div class="card">
+          <h3>Backups mean stop using water</h3>
+          <p class="muted">
+            Sewage backing up into tubs, drains, or toilets means the system has nowhere to put the
+            water. Every flush and load of laundry makes it worse. We pump it down, find the cause,
+            and get your house draining again.
+          </p>
+        </div>
+        <div class="card">
+          <h3>A soggy yard or smell is a warning</h3>
+          <p class="muted">
+            Standing water, spongy ground, or a sewage odor over the tank or drain field means the
+            system isn’t absorbing water the way it should. Often it’s a fixable upstream problem,
+            not a dead field — but it needs a look before it gets worse.
+          </p>
+        </div>
+        <div class="card">
+          <h3>A pump alarm can’t be ignored</h3>
+          <p class="muted">
+            On mountain lots that pump effluent uphill, an alarm means the pump tank is filling
+            faster than it’s emptying — usually a failed pump or stuck float. Cut back on water and
+            call before it turns into a backup.
+          </p>
+        </div>
+      </div>
+      <p style="text-align:center;margin-top:24px;">
+        <a class="btn btn-call btn-lg" href={tel()}>Call {SITE.phoneDisplay}</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- 6. How It Works -->
+  <section class="section section-soft">
+    <div class="container">
+      <div class="section-head">
+        <h2>How It Works</h2>
+        <p class="lead muted">Three steps, no runaround.</p>
+      </div>
+      <div class="issue-grid">
+        <div class="card">
+          <h3>1. Call or request a quote</h3>
+          <p class="muted">
+            Call {SITE.phoneDisplay} or send the quote form. Tell us where the property is and what’s
+            going on and we’ll give you a straight price and a real time.
+          </p>
+        </div>
+        <div class="card">
+          <h3>2. Tell us about your system</h3>
+          <p class="muted">
+            Let us know roughly where the tank is, when it was last pumped if you know, and the
+            symptom — a routine pump, a backup, a soggy yard, an alarm, or an inspection. That’s
+            usually enough for an honest quote.
+          </p>
+        </div>
+        <div class="card">
+          <h3>3. We come to your property</h3>
+          <p class="muted">
+            We locate and access the tank, do the work on-site — most jobs in one visit — and show
+            you what we find before recommending anything. No upsells, no surprises.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Service area list -->
+  <CityLinks
+    title={`Service Area — Across ${SITE.region} & the Surrounding Mountains`}
+    sub="Septic pumping, repair, and inspections for every community we cover."
+  />
+
+  <!-- 8. FAQ -->
+  <FaqSection faqs={homeFaqs} title="Questions We Hear a Lot" />
+
+  <!-- Final CTA -->
+  <FinalCta />
+</BaseLayout>
+
+<style>
+  .srow-body .badge {
+    display: inline-block;
+    background: #b42318;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: var(--radius);
+    margin-bottom: 8px;
+  }
+  .srow-body h3 {
+    font-size: 1.35rem;
+    margin-bottom: 8px;
+  }
+  .srow-body h3 a {
+    color: var(--navy);
+    text-decoration: none;
+  }
+  .srow-body h3 a:hover {
+    color: var(--green-dark);
+  }
+  .srow-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 4px;
+  }
+</style>

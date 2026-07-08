@@ -1,0 +1,90 @@
+---
+/**
+ * RelatedServices.astro — in-content internal links from a service hub to its sibling
+ * service hubs, using EXACT-MATCH service-name anchor text.
+ *
+ * SEO purpose (experiment EXP-001, see analytics/analysis/ONPAGE-EXPERIMENTS.md):
+ * the money pages previously only linked DOWN to city pages and received no links from
+ * each other. This block adds sibling-hub internal links so PageRank flows between the
+ * commercial pages and each hub earns exact-match anchor text from related pages —
+ * the strongest controllable on-page relevance signal when there is no GBP.
+ */
+import { SERVICES, type Service } from '@config/services';
+import { SITE } from '@config/site';
+import { serviceUrl } from '../lib/urls';
+
+interface Props {
+  current: Service;
+  title?: string;
+}
+const { current, title } = Astro.props;
+
+const others = SERVICES.filter((s) => s.slug !== current.slug);
+const headTitle = title ?? `Other Septic Services We Offer Across ${SITE.region}`;
+---
+
+<section class="section">
+  <div class="container">
+    <div class="section-head">
+      <h2>{headTitle}</h2>
+      <p class="lead muted">One local crew for the whole system — explore the rest of what we do.</p>
+    </div>
+    <ul class="related-svcs">
+      {
+        others.map((s) => (
+          <li>
+            <a class="related-svc" href={serviceUrl(s)}>
+              {/* Exact-match anchor text = the ranking lever. Keep it the bare service name. */}
+              <span class="related-svc-name">{s.name}</span>
+              <span class="related-svc-blurb">{s.blurb}</span>
+              <span class="related-svc-cta">Learn more →</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>
+
+<style>
+  .related-svcs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+  }
+  .related-svc {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    height: 100%;
+    padding: 18px 20px;
+    border: 1px solid var(--border, #e2e2e2);
+    border-radius: var(--radius, 10px);
+    background: #fff;
+    text-decoration: none;
+    color: inherit;
+    transition: border-color 0.15s ease;
+  }
+  .related-svc:hover {
+    border-color: var(--green-dark, #2f7a3f);
+  }
+  .related-svc-name {
+    font-weight: 800;
+    font-size: 1.08rem;
+    color: var(--navy, #0f2c4d);
+  }
+  .related-svc-blurb {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+  .related-svc-cta {
+    margin-top: auto;
+    color: var(--green-dark, #2f7a3f);
+    font-weight: 700;
+    font-size: 0.92rem;
+  }
+</style>
