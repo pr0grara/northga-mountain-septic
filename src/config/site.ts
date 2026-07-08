@@ -37,9 +37,9 @@ export const SITE: SiteConfig = {
   trade: 'septic service',
   phone: '+17065550142', // PLACEHOLDER — fictitious 555-01xx range; swap for the real (706/762) number before launch
   phoneDisplay: '(706) 555-0142',
-  email: 'service@northgeorgiaseptic.com', // PLACEHOLDER local-part — confirm the real inbox
+  email: 'service@northgamountainseptic.com', // PLACEHOLDER local-part — confirm the real inbox
   region: 'North Georgia',
-  url: 'https://northgeorgiaseptic.com', // keep in sync with astro.config.mjs
+  url: 'https://northgamountainseptic.com', // keep in sync with astro.config.mjs
   // Web3Forms backend → routes submissions to the email registered with the access key.
   // Shared key routes leads to azbaghda@gmail.com. Form stays in safe call-only mode until a
   // key is set, so deploying without one won't break it.
