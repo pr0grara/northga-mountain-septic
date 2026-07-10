@@ -39,7 +39,7 @@ const combinedFaqs = [...city.faqs, ...service.faqs].filter(
 );
 
 const title = `${service.name} in ${where} | ${SITE.company}`;
-const description = `${service.short} in ${city.name}, ${city.state ?? 'NC'}. ${service.blurb} Local ${SITE.trade} — call ${SITE.phoneDisplay} for a fast quote.`;
+const description = `${service.short} in ${city.name}, ${city.state ?? 'GA'}. ${service.blurb} Local ${SITE.trade} — call ${SITE.phoneDisplay} for a fast quote.`;
 
 const jsonLd = [
   breadcrumb([
@@ -84,7 +84,7 @@ if (faqLd) jsonLd.push(faqLd);
 
         <Image
           src={photo}
-          alt={`${service.name} in ${city.name}, ${city.state ?? 'NC'}`}
+          alt={`${service.name} in ${city.name}, ${city.state ?? 'GA'}`}
           widths={[480, 760, 1000]}
           sizes="(max-width: 920px) 100vw, 640px"
           loading="lazy"

@@ -44,9 +44,9 @@ export const SERVICES: Service[] = [
     slug: 'septic-services',
     name: 'Septic Tank Services',
     short: 'Septic Services',
-    blurb: 'Pumping, cleaning, repairs, inspections, and emergencies — one local crew for the whole septic system across Western North Carolina.',
+    blurb: 'Pumping, cleaning, repairs, inspections, and emergencies — one local crew for the whole septic system across North Georgia.',
     description:
-      'We are a full-service septic company covering the mountains of Western North Carolina, from the homes around Asheville out to the coves, ridges, and rural properties of the surrounding counties. If it has to do with a septic system, we handle it: routine tank pumping, deep cleaning, system repairs, real-estate and point-of-sale inspections, drain field problems, and emergency backups. Out here most homes are not on city sewer — they run on a tank and a drain field — and that system needs to be pumped on a schedule and looked after, especially on the steep lots, rocky soil, and tight mountain driveways that make WNC septic work its own animal. You call, you tell us roughly where the tank is and what is going on, and we give you a straight answer and a real price. No upsells, no scare tactics — just an honest crew that knows mountain septic systems.',
+      'We are a full-service septic company covering the mountains of North Georgia, from the homes around Blue Ridge and Ellijay out to the hollows, ridges, and rural properties of the surrounding counties. If it has to do with a septic system, we handle it: routine tank pumping, deep cleaning, system repairs, real-estate and point-of-sale inspections, drain field problems, and emergency backups. Out here most homes are not on city sewer — they run on a tank and a drain field — and that system needs to be pumped on a schedule and looked after, especially on the steep lots, red clay and rocky soil, and long gravel driveways that make North Georgia septic work its own animal. You call, you tell us roughly where the tank is and what is going on, and we give you a straight answer and a real price. No upsells, no scare tactics — just an honest crew that knows mountain septic systems.',
     sections: [
       {
         h: 'One crew for the whole septic system',
@@ -54,7 +54,7 @@ export const SERVICES: Service[] = [
       },
       {
         h: 'Built for mountain properties',
-        body: 'Western NC septic work is not flat-lot work. Tanks get buried on slopes, driveways are steep and narrow, soil is rocky and slow to drain, and a lot of systems are decades old and were put in before anyone kept good records. We bring the right truck and hose length for the access, we locate buried tanks and lids, and we know how grade, soil, and our wet seasons stress a mountain drain field. That local know-how is the difference between a quick pump and a torn-up yard.',
+        body: 'North Georgia septic work is not flat-lot work. Tanks get buried on slopes, driveways are steep and narrow, soil is red clay and rock that is slow to drain, and a lot of systems are decades old and were put in before anyone kept good records. We bring the right truck and hose length for the access, we locate buried tanks and lids, and we know how grade, soil, and our wet seasons stress a mountain drain field. That local know-how is the difference between a quick pump and a torn-up yard.',
       },
       {
         h: 'Straight answers, honest pricing',
@@ -63,7 +63,7 @@ export const SERVICES: Service[] = [
     ],
     points: [
       'Pumping, cleaning, repairs, inspections, and emergencies — one crew',
-      'Residential systems across Western North Carolina',
+      'Residential systems across North Georgia',
       'Tank and lid locating on hard-to-find mountain systems',
       'Honest, up-front pricing with no surprise add-ons',
       'We show you what we find before recommending work',
@@ -72,7 +72,7 @@ export const SERVICES: Service[] = [
     faqs: [
       {
         q: 'How often should a septic tank be pumped?',
-        a: 'For most households, every three to five years, depending on tank size and how many people live in the home. Smaller tanks, larger families, and properties used as full-time rentals need it more often. If you cannot remember the last time it was pumped, it is overdue — call and we will get you on a schedule.',
+        a: 'For most households, every three to five years, depending on tank size and how many people live in the home. Smaller tanks, larger families, and properties used as full-time rentals need it more often. If you cannot remember the last time it was pumped, it is probably overdue — call and we will get you on a schedule.',
       },
       {
         q: 'Do you handle the whole system or just pumping?',
@@ -84,11 +84,11 @@ export const SERVICES: Service[] = [
       },
       {
         q: 'How do I find my tank if I have no idea where it is?',
-        a: 'That is common on older WNC properties with no records. We locate buried tanks and lids as part of the job — from the plumbing exit, the system layout, and probing the yard. Once we find it, we can note the location so it is easy next time.',
+        a: 'That is common on older North Georgia properties with no records. We locate buried tanks and lids as part of the job — from the plumbing exit, the system layout, and probing the yard. Once we find it, we can note the location so it is easy next time.',
       },
     ],
     image: septicServicesImg,
-    imageAlt: 'Septic service truck working at a rural mountain home in Western North Carolina',
+    imageAlt: 'Septic service truck working at a rural mountain home in North Georgia',
     hubOnly: true,
   },
   {
@@ -97,19 +97,19 @@ export const SERVICES: Service[] = [
     short: 'Tank Pumping',
     blurb: 'Routine pumping keeps your system healthy. We locate, dig, and pump your tank — most homes done in one visit.',
     description:
-      'Pumping is the single most important thing you can do for a septic system, and it is what we do most. Over time, solids settle to the bottom of the tank and grease and scum float to the top; pumping removes both before they can wash out into the drain field and clog it. We pump residential septic tanks anywhere in Western North Carolina — we locate and dig to the lid, pump the tank down completely, check the baffles and the tank condition while it is open, and tell you straight what we see. Most homes need pumping every three to five years, but mountain properties with full-time rentals, big families, or older small tanks often need it sooner. The cheapest repair in septic is the pump you do on time; the most expensive is the drain field you replace because you waited too long.',
+      'Pumping is the single most important thing you can do for a septic system, and it is what we do most. Over time, solids settle to the bottom of the tank and grease and scum float to the top; pumping removes both before they can wash out into the drain field and clog it. We pump residential septic tanks anywhere in North Georgia — we locate and dig to the lid, pump the tank down completely, check the baffles and the tank condition while it is open, and tell you straight what we see. Most homes need pumping every three to five years, but mountain properties with full-time rentals, big families, or older small tanks often need it sooner. The cheapest repair in septic is the pump you do on time; the most expensive is the drain field you replace because you waited too long.',
     sections: [
       {
         h: 'Why pumping on schedule protects the expensive part',
         body: 'The drain field — the buried lines that let treated water soak into the ground — is by far the most expensive part of a septic system to replace. A tank that is never pumped lets solids build up until they spill over into those lines and clog the soil. Once a drain field is plugged with solids, no amount of pumping brings it back; it has to be rebuilt. Regular pumping is cheap insurance against a five-figure drain field job.',
       },
       {
-        h: 'How often a WNC home really needs it',
+        h: 'How often a North Georgia home really needs it',
         body: 'The old "every few years" rule depends on your tank size and your household. A 1,000-gallon tank serving a family of four typically needs pumping every three to five years. A smaller or older tank, a bigger household, a garbage disposal, or a home run as a short-term rental with heavy weekend use all shorten that interval. We will look at your tank and your usage and give you a realistic schedule instead of a one-size guess.',
       },
       {
         h: 'Locating and digging on mountain lots',
-        body: 'Half the work on an older WNC property is finding the tank. Lids get buried under years of dirt, landscaping, or a deck, and there are often no records. We locate the tank from the plumbing, the layout, and probing, dig down to the lid, and pump from there. When we are done we can map the location so the next pump is quick and you are not paying to find it again.',
+        body: 'Half the work on an older North Georgia property is finding the tank. Lids get buried under years of dirt, landscaping, or a deck, and there are often no records. We locate the tank from the plumbing, the layout, and probing, dig down to the lid, and pump from there. When we are done we can map the location so the next pump is quick and you are not paying to find it again.',
       },
     ],
     points: [
@@ -127,7 +127,7 @@ export const SERVICES: Service[] = [
       },
       {
         q: 'What happens if I never pump my tank?',
-        a: 'Solids build up until they wash out into the drain field and clog the soil. At that point the field can no longer absorb water, you get backups and soggy spots in the yard, and the fix is no longer a pump — it is a partial or full drain field replacement, which is the most expensive job in septic. Pumping on schedule prevents that.',
+        a: 'Solids build up until they wash out into the drain field and clog the soil. At that point the field can no longer absorb water, you get backups and soggy spots in the yard, and the fix is no longer a pump — it is a partial or full drain field replacement, which is the most expensive job in septic. Pumping on schedule is the best way to prevent that.',
       },
       {
         q: 'Do I need to find my tank before you come?',
@@ -139,7 +139,7 @@ export const SERVICES: Service[] = [
       },
     ],
     image: septicPumpingImg,
-    imageAlt: 'Septic tank being pumped at a home in Western North Carolina',
+    imageAlt: 'Septic tank being pumped at a home in North Georgia',
   },
   {
     slug: 'septic-tank-cleaning',
@@ -147,7 +147,7 @@ export const SERVICES: Service[] = [
     short: 'Tank Cleaning',
     blurb: 'More thorough than a basic pump — we remove the packed sludge and scum and leave the tank truly clean.',
     description:
-      'Pumping and cleaning are related but not the same. A basic pump removes the liquid and the loose solids; a proper cleaning removes the packed sludge layer on the bottom and the hardened scum mat on top that a quick pump can leave behind. On tanks that have gone too long between services, that compacted material has to be broken up and removed, or it keeps degrading the system. We clean residential septic tanks across Western North Carolina — we pump the tank down, break up and remove the bottom sludge and the scum layer, back-flush and agitate as needed, and inspect the inlet and outlet baffles so flow is correct when we are done. If your tank has not been touched in many years, or you have just bought a mountain property with an unknown service history, a cleaning is the right reset before you put it back on a normal pumping schedule.',
+      'Pumping and cleaning are related but not the same. A basic pump removes the liquid and the loose solids; a proper cleaning removes the packed sludge layer on the bottom and the hardened scum mat on top that a quick pump can leave behind. On tanks that have gone too long between services, that compacted material has to be broken up and removed, or it keeps degrading the system. We clean residential septic tanks across North Georgia — we pump the tank down, break up and remove the bottom sludge and the scum layer, back-flush and agitate as needed, and inspect the inlet and outlet baffles so flow is correct when we are done. If your tank has not been touched in many years, or you have just bought a mountain property with an unknown service history, a cleaning is the right reset before you put it back on a normal pumping schedule.',
     sections: [
       {
         h: 'Cleaning vs. pumping — what is the difference',
@@ -155,7 +155,7 @@ export const SERVICES: Service[] = [
       },
       {
         h: 'Best after a long gap or a new purchase',
-        body: 'A full cleaning makes the most sense in two situations: a tank that has gone well past its interval and built up hardened layers, or a home you have just bought with no service records — common with the cabins, coves, and inherited family places all over Western NC. Starting from a truly clean tank gives you a known baseline, and from there a routine pump every few years keeps it healthy.',
+        body: 'A full cleaning makes the most sense in two situations: a tank that has gone well past its interval and built up hardened layers, or a home you have just bought with no service records — common with the cabins, vacation rentals, and inherited family places all over North Georgia. Starting from a truly clean tank gives you a known baseline, and from there a routine pump every few years keeps it healthy.',
       },
     ],
     points: [
@@ -181,7 +181,7 @@ export const SERVICES: Service[] = [
       },
     ],
     image: septicCleaningImg,
-    imageAlt: 'Technician cleaning an open septic tank at a Western North Carolina property',
+    imageAlt: 'Technician cleaning an open septic tank at a North Georgia property',
   },
   {
     slug: 'septic-system-repair',
@@ -189,7 +189,7 @@ export const SERVICES: Service[] = [
     short: 'System Repair',
     blurb: 'Broken lid, collapsed baffle, cracked line, or failed pump? We diagnose and repair the parts that fail.',
     description:
-      'A septic system is more than a tank. There are inlet and outlet baffles that control flow, a lid and access risers, the sewer line from the house, the distribution box that splits flow to the drain field, and on many mountain properties a pump and float system that lifts effluent uphill to the field. Any of those can fail — and when they do, you get backups, odors, or a system that quietly stops treating waste. We diagnose and repair septic systems across Western North Carolina. We find the actual problem rather than guessing, replace broken baffles, lids, and risers, repair or replace cracked and root-invaded lines, rebuild distribution boxes, and replace failed effluent pumps and floats. Pump systems are especially common here because so many homes sit below their drain field on a slope, and when a pump quits, the whole system stops until it is fixed.',
+      'A septic system is more than a tank. There are inlet and outlet baffles that control flow, a lid and access risers, the sewer line from the house, the distribution box that splits flow to the drain field, and on many mountain properties a pump and float system that lifts effluent uphill to the field. Any of those can fail — and when they do, you get backups, odors, or a system that quietly stops treating waste. We diagnose and repair septic systems across North Georgia. We find the actual problem rather than guessing, replace broken baffles, lids, and risers, repair or replace cracked and root-invaded lines, rebuild distribution boxes, and replace failed effluent pumps and floats. Pump systems are especially common here because so many homes sit below their drain field on a slope, and when a pump quits, the whole system stops until it is fixed.',
     sections: [
       {
         h: 'The parts that actually fail',
@@ -197,7 +197,7 @@ export const SERVICES: Service[] = [
       },
       {
         h: 'Pump and float systems on mountain lots',
-        body: 'A lot of WNC homes sit downhill from the only usable spot for a drain field, so the system uses a pump tank and float switches to push effluent uphill. Those pumps and floats are mechanical and they wear out, and when one fails the tank fills with no warning until an alarm sounds or the system backs up. We test, repair, and replace effluent and lift pumps, floats, and alarms, and we make sure the controls are right so you get warning before a failure instead of a mess.',
+        body: 'A lot of North Georgia homes sit downhill from the only usable spot for a drain field, so the system uses a pump tank and float switches to push effluent uphill. Those pumps and floats are mechanical and they wear out, and when one fails the tank fills with no warning until an alarm sounds or the system backs up. We test, repair, and replace effluent and lift pumps, floats, and alarms, and we make sure the controls are right so you get warning before a failure instead of a mess.',
       },
     ],
     points: [
@@ -223,7 +223,7 @@ export const SERVICES: Service[] = [
       },
     ],
     image: septicRepairImg,
-    imageAlt: 'Septic system components being repaired at a home in Western North Carolina',
+    imageAlt: 'Septic system components being repaired at a home in North Georgia',
   },
   {
     slug: 'septic-inspections',
@@ -231,11 +231,11 @@ export const SERVICES: Service[] = [
     short: 'Inspections',
     blurb: 'Buying or selling a home? We inspect the tank, components, and drain field and give you a clear written picture.',
     description:
-      'A septic inspection tells you the true condition of a system before it becomes your problem — which is exactly why they matter when a mountain home changes hands. We inspect residential septic systems across Western North Carolina for home buyers, sellers, and owners who just want to know where they stand. We locate and open the tank, pump it if needed to see the bottom, measure the sludge and scum levels, check the baffles, lid, and risers, inspect any pump and float controls, run water to see how the system handles flow, and evaluate the drain field for signs of failure like soggy ground or surfacing effluent. You get a clear rundown of what is good, what is aging, and what needs attention — the honest information you need to buy with confidence, sell without surprises, or budget for the work ahead.',
+      'A septic inspection tells you the true condition of a system before it becomes your problem — which is exactly why they matter when a mountain home changes hands. We inspect residential septic systems across North Georgia for home buyers, sellers, and owners who just want to know where they stand. We locate and open the tank, pump it if needed to see the bottom, measure the sludge and scum levels, check the baffles, lid, and risers, inspect any pump and float controls, run water to see how the system handles flow, and evaluate the drain field for signs of failure like soggy ground or surfacing effluent. You get a clear rundown of what is good, what is aging, and what needs attention — the honest information you need to buy with confidence, sell without surprises, or budget for the work ahead.',
     sections: [
       {
         h: 'Why it matters most at a home sale',
-        body: 'A drain field replacement can run into five figures, and a buyer who skips the septic inspection can inherit exactly that. On the flip side, a seller with a clean, recently inspected system has real proof to hand a buyer. Because so many Western NC homes — cabins, coves, inherited family places, and rural acreage — run on septic rather than sewer, the septic inspection is one of the most important and most overlooked parts of the deal.',
+        body: 'A drain field replacement can run into five figures, and a buyer who skips the septic inspection can inherit exactly that. On the flip side, a seller with a clean, recently inspected system has real proof to hand a buyer. Because so many North Georgia homes — cabins, vacation rentals, inherited family places, and rural acreage — run on septic rather than sewer, the septic inspection is one of the most important and most overlooked parts of the deal.',
       },
       {
         h: 'What a real inspection covers',
@@ -253,7 +253,7 @@ export const SERVICES: Service[] = [
     faqs: [
       {
         q: 'Do I need a septic inspection when buying a home?',
-        a: 'If the home is on septic — and most rural Western NC homes are — yes, absolutely. A failing drain field can cost five figures to replace, and a standard home inspection does not cover the septic system in any depth. A dedicated septic inspection tells you the real condition before you are the one who owns it.',
+        a: 'If the home is on septic — and most rural North Georgia homes are — yes, absolutely. A failing drain field can cost five figures to replace, and a standard home inspection does not cover the septic system in any depth. A dedicated septic inspection tells you the real condition before you are the one who owns it.',
       },
       {
         q: 'Will you pump the tank during the inspection?',
@@ -265,7 +265,7 @@ export const SERVICES: Service[] = [
       },
     ],
     image: septicInspectionImg,
-    imageAlt: 'Technician inspecting an open septic tank during a home-sale inspection in Western North Carolina',
+    imageAlt: 'Technician inspecting an open septic tank during a home-sale inspection in North Georgia',
   },
   {
     slug: 'drain-field-repair',
@@ -273,7 +273,7 @@ export const SERVICES: Service[] = [
     short: 'Drain Field',
     blurb: 'Soggy yard, standing water, or odors over the field? We diagnose a struggling drain field and fix what we can.',
     description:
-      'The drain field — also called the leach field — is where treated water from the tank soaks back into the ground, and it is both the most important and the most expensive part of a septic system. When a field starts to fail you see it in the yard: spongy or standing water over the lines, lush green grass in strips, sewage odor outside, slow drains in the house, and eventually backups. We diagnose and repair drain field problems across Western North Carolina. A lot of field trouble is not a dead field at all — it is a tank that overflowed solids into the lines, a failed pump, a crushed or root-clogged line, or simply ground saturated from our heavy mountain rains. We find the real cause, and where the field itself is the problem we repair, restore, or rebuild the failed lines rather than assuming the whole thing has to be torn out.',
+      'The drain field — also called the leach field — is where treated water from the tank soaks back into the ground, and it is both the most important and the most expensive part of a septic system. When a field starts to fail you see it in the yard: spongy or standing water over the lines, lush green grass in strips, sewage odor outside, slow drains in the house, and eventually backups. We diagnose and repair drain field problems across North Georgia. A lot of field trouble is not a dead field at all — it is a tank that overflowed solids into the lines, a failed pump, a crushed or root-clogged line, or simply ground saturated from our heavy mountain rains. We find the real cause, and where the field itself is the problem we repair, restore, or rebuild the failed lines rather than assuming the whole thing has to be torn out.',
     sections: [
       {
         h: 'Reading the signs in the yard',
@@ -281,7 +281,7 @@ export const SERVICES: Service[] = [
       },
       {
         h: 'Why mountain fields fail — and what is actually fixable',
-        body: 'Western NC is hard on drain fields: rocky and clay soils drain slowly, steep grades concentrate water, and our wet seasons saturate the ground. On top of that, a tank that has not been pumped sends solids into the lines and clogs the soil. The good news is that a lot of "failed field" calls turn out to be a fixable upstream problem — an overflowing tank, a dead pump, a crushed pipe, or roots — not a dead field. We diagnose first so you are not paying to replace a field that did not need replacing.',
+        body: 'North Georgia is hard on drain fields: red clay and rocky soils drain slowly, steep grades concentrate water, and our wet seasons saturate the ground. On top of that, a tank that has not been pumped sends solids into the lines and clogs the soil. The good news is that a lot of "failed field" calls turn out to be a fixable upstream problem — an overflowing tank, a dead pump, a crushed pipe, or roots — not a dead field. We diagnose first so you are not paying to replace a field that did not need replacing.',
       },
     ],
     points: [
@@ -307,7 +307,7 @@ export const SERVICES: Service[] = [
       },
     ],
     image: drainFieldImg,
-    imageAlt: 'Drain field repair work at a rural property in Western North Carolina',
+    imageAlt: 'Drain field repair work at a rural property in North Georgia',
   },
   {
     slug: 'emergency-septic-service',
@@ -315,7 +315,7 @@ export const SERVICES: Service[] = [
     short: 'Emergency Service',
     blurb: 'Sewage backing up, toilets won’t flush, or an alarm going off? Fast help to stop the mess and get you running.',
     description:
-      'A septic backup is not a "next week" problem — it is sewage coming into your home or surfacing in your yard, and it gets worse and more expensive every hour. If your toilets and drains have stopped working, sewage is backing up into tubs or floor drains, you smell it inside, there is effluent surfacing over the tank or field, or a pump alarm is going off, that is an emergency and we treat it like one. We provide fast emergency septic service across Western North Carolina. We come out, find why the system stopped — a full tank, a clogged or broken line, a failed pump, or a saturated drain field — pump the tank to relieve the backup, and get you running again. The first priority is stopping the mess and getting your household functional; then we tell you straight what failed and what it takes to keep it from happening again.',
+      'A septic backup is not a "next week" problem — it is sewage coming into your home or surfacing in your yard, and it tends to get worse and more expensive the longer it sits. If your toilets and drains have stopped working, sewage is backing up into tubs or floor drains, you smell it inside, there is effluent surfacing over the tank or field, or a pump alarm is going off, that is an emergency and we treat it like one. We provide fast emergency septic service across North Georgia. We come out, find why the system stopped — a full tank, a clogged or broken line, a failed pump, or a saturated drain field — pump the tank to relieve the backup, and get you running again. The first priority is stopping the mess and getting your household functional; then we tell you straight what failed and what it takes to keep it from happening again.',
     sections: [
       {
         h: 'When a septic problem can’t wait',
@@ -353,7 +353,7 @@ export const SERVICES: Service[] = [
       },
     ],
     image: emergencySepticImg,
-    imageAlt: 'Emergency septic service truck responding to a backup at a Western North Carolina home',
+    imageAlt: 'Emergency septic service truck responding to a backup at a North Georgia home',
     emergency: true,
   },
 ];

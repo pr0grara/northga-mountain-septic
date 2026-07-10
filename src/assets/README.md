@@ -17,9 +17,9 @@ resizes/compresses them at build; only the optimized variants ship.
 
 The current images are **free-licensed septic photos pulled from Wikimedia Commons** so the build
 resolves and the site looks like a real septic business, not broken. They are generic stock — pump
-trucks, open tanks, and a drain-field trench, none of them shot in Western NC. **Replace them with
+trucks, open tanks, and a drain-field trench, none of them shot in North Georgia. **Replace them with
 real job photos before launch** — real local proof (your actual truck, a tank being pumped on a
-mountain lot, your crew on a Buncombe County property) is load-bearing for this kind of site
+mountain lot, your crew on a Fannin County property) is load-bearing for this kind of site
 (see SPEC §2). Keep the same filenames (or update the `import`s in `src/config/services.ts`) so
 nothing breaks.
 

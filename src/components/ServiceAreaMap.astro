@@ -13,10 +13,10 @@ interface County {
   query: string;
 }
 
-// Western NC mountain coverage (Buncombe County + the surrounding mountain counties).
+// North Georgia mountain coverage (Fannin County + the surrounding mountain counties).
 const COUNTIES: County[] = [
-  { name: 'Asheville & Buncombe County', query: 'Asheville, North Carolina' },
-  { name: 'Hendersonville, Haywood & the Surrounding Mountains', query: 'Hendersonville, North Carolina' },
+  { name: 'Blue Ridge & Fannin County', query: 'Blue Ridge, Georgia' },
+  { name: 'Ellijay, Dahlonega & the Surrounding Mountains', query: 'Ellijay, Georgia' },
 ];
 
 const embed = (q: string) =>
@@ -29,7 +29,7 @@ const embed = (q: string) =>
       <h2>Septic Service Across {SITE.region}</h2>
       <p class="lead muted">
         {SITE.company} covers {SITE.region} and the surrounding mountain counties — we come to your
-        property, in town or up a cove. Don’t see your area? Call us — we likely cover it.
+        property, in town or up a mountain road. Don’t see your area? Call us — we likely cover it.
       </p>
     </div>
 
