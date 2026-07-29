@@ -143,7 +143,7 @@ export const SERVICES: Service[] = [
   },
   {
     slug: 'septic-tank-cleaning',
-    name: 'Septic Tank Cleaning',
+    name: 'Septic Tank Cleaning & Sludge Removal',
     short: 'Tank Cleaning',
     blurb: 'More thorough than a basic pump — we remove the packed sludge and scum and leave the tank truly clean.',
     description:
